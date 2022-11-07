@@ -1,0 +1,24 @@
+
+Frontend - Netlify, Vercel, Github pages etc. - Not localhost:8000/, it'll be Backend code deployed URL.
+
+Backend API's/Backend Code/Service - Heroku, Render, Railway etc. - Not mongodb://127.0.0.1:27017/, we'll use the Atlas
+
+Database -> MongoDB Atlas -  Not the image itself, but the URL of the image
+
+Files -> Images/Videos -> we don't store in the primary DB, we store somewhere else* - 
+
+somewhere else -> it can be your local computer/AWS S3 bucket/Cloudinary(has free version)
+
+
+
+1. Have a PORT variable
+2. Dont' use Nodemon
+3. whatever you keep in .env like MONGO_URL, add the same in "Environment" on Render
+
+
+
+
+Mongo Errors ; 
+1. IP address is not - mongodb - network access - make it accessible for everyone
+2. url - username or password -  don't have special characters in password
+3. dns - https://developers.google.com/speed/public-dns/docs/using
